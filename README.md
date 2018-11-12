@@ -648,9 +648,9 @@ func main() {
 }
 ```
 
-###设置应用环境
+### 设置应用环境
 
-####config.json
+#### config.json
 
 返回至项目根目录下
 
@@ -683,7 +683,7 @@ $ vim config.json
 }
 ```
 
-####package.json
+#### package.json
 
 创建 `package.json` 文件，指定应用依赖信息
 
@@ -729,7 +729,7 @@ $ vim package.json
 }
 ```
 
-####config.js
+#### config.js
 
 创建 `config.js` 文件，指定网络配置相关信息
 
@@ -1265,7 +1265,7 @@ certificateAuthorities:
 
 
 
-####org1.yaml
+#### org1.yaml
 
 ```shell
 $ vim org1.yaml
@@ -1331,7 +1331,7 @@ client:
 
 
 
-####org2.yaml
+#### org2.yaml
 
 ```shell
 $ vim org2.yaml
@@ -2531,7 +2531,7 @@ exports.getInstalledChaincodes = getInstalledChaincodes;
 exports.getChannels = getChannels;
 ```
 
-####app.js
+#### app.js
 
 应用启动主文件，加载相关配置并进行初始化，通过编写的相应函数发出调用请求。
 
@@ -3357,7 +3357,7 @@ $ cd $HOME/kevin-fabric-sdk-node
 ```shell
 $ npm install -g gulp
 ```
-#####创建 `runApp.sh` 文件并编辑
+##### 创建 `runApp.sh` 文件并编辑
 
 ```shell
 $ vim runApp.sh
@@ -3439,7 +3439,7 @@ PORT=4000 node app
 
 ```
 
-#####添加可执行权限并执行 `runApp.sh` 脚本：
+##### 添加可执行权限并执行 `runApp.sh` 脚本：
 
 ```shell
 $ chmod 777 ./runApp.sh
@@ -3465,7 +3465,7 @@ $ sudo apt install -y jq
 $ cd $HOME/kevin-fabric-sdk-node
 ```
 
-#####创建并编辑 `testAPIs.sh` 脚本文件
+##### 创建并编辑 `testAPIs.sh` 脚本文件
 
 ```shell
 $ vim testAPIs.sh
@@ -3743,7 +3743,7 @@ echo "Total execution time : $(($(date +%s)-starttime)) secs ..."
 
 应用程序在终端1中启动之后，接下来，我们通过执行 **testAPIs.sh** 脚本来测试API ：
 
-#####添加可执行权限并执行 `testAPIs.sh` 脚本：
+##### 添加可执行权限并执行 `testAPIs.sh` 脚本：
 
 ```shell
 $ chmod 777 ./testAPIs.sh
@@ -3804,7 +3804,7 @@ $ ./stopAPP.sh
 [![Creative Commons License](https://camo.githubusercontent.com/005cfe27b7c4520ac0d6b607d6a7e33f5ad4eb6e/68747470733a2f2f692e6372656174697665636f6d6d6f6e732e6f72672f6c2f62792f342e302f38387833312e706e67)](http://creativecommons.org/licenses/by/4.0/)
 This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 
-###参考资料
+### 参考资料
 
 - [Hyperledger 官网](https://www.hyperledger.org/)
 
