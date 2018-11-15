@@ -2,7 +2,7 @@
 
 ## 从零到壹构建基于fabric-sdk-node的项目开发实战
 
-一个Node.js示例应用程序，用于演示 **fabric-client** 和 **fabric-ca-client**  Node.js SDK API
+> 我们通过对 fabric-samples 中的一个NodeJS示例应用程序（balance-transfer）的分析，来演示 fabric-client 和 fabric-ca-client 及 fabric-sdk-node API 的使用。
 
 ### 先决条件和安装设置:
 
@@ -3340,7 +3340,7 @@ $ ./shutdownnetwork.sh
 
 
 
-### 自动化测试
+### 实现自动化测试
 
 之前的方式，需要我们每次都要输入命令，这样操作的话比较麻烦，所以现在我们对其进行简化，没有必要每次都输入一长串的命令来执行，而是将命令写在指定的脚本文件中，以后直接执行该脚本文件即可，此方式大大简化了测试步骤，提高效率。
 
