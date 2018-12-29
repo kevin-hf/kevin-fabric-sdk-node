@@ -120,7 +120,7 @@ organizations:
     # this way. The SDK should allow applications to set the org admin identity via APIs, and only use
     # this route as an alternative when it exists.
     adminPrivateKey:
-      path: artifacts/channel/crypto-config/peerOrganizations/org1.kevin.kongyixueyuan.com/users/Admin@org1.kevin.kongyixueyuan.com/msp/keystore/3a497246b8b16356e0a4e2df8d77e3327c5934494f488ddaa625d6bdbdff2cf7_sk
+      path: artifacts/channel/crypto-config/peerOrganizations/org1.kevin.kongyixueyuan.com/users/Admin@org1.kevin.kongyixueyuan.com/msp/keystore/ca72ee77552f81537f82c98f4d2abc6d6df1c94c8022f1a176c45e35a812496d_sk
     signedCert:
       path: artifacts/channel/crypto-config/peerOrganizations/org1.kevin.kongyixueyuan.com/users/Admin@org1.kevin.kongyixueyuan.com/msp/signcerts/Admin@org1.kevin.kongyixueyuan.com-cert.pem
 
@@ -137,7 +137,7 @@ organizations:
     certificateAuthorities:
       - ca-org2
     adminPrivateKey:
-      path: artifacts/channel/crypto-config/peerOrganizations/org2.kevin.kongyixueyuan.com/users/Admin@org2.kevin.kongyixueyuan.com/msp/keystore/76d11fc03c74296a12d1e0075b1ea17332ee2a07f97617cb6104e1f5aa377953_sk
+      path: artifacts/channel/crypto-config/peerOrganizations/org2.kevin.kongyixueyuan.com/users/Admin@org2.kevin.kongyixueyuan.com/msp/keystore/77c2e4e04f4098e29b6143f18a378a20fce8af5151b7e93aafba327fc2256c30_sk
     signedCert:
       path: artifacts/channel/crypto-config/peerOrganizations/org2.kevin.kongyixueyuan.com/users/Admin@org2.kevin.kongyixueyuan.com/msp/signcerts/Admin@org2.kevin.kongyixueyuan.com-cert.pem
 

@@ -271,10 +271,10 @@ services:
       - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
       - FABRIC_CA_SERVER_CA_NAME=ca-org1
       - FABRIC_CA_SERVER_CA_CERTFILE=/etc/hyperledger/fabric-ca-server-config/ca.org1.kevin.kongyixueyuan.com-cert.pem
-      - FABRIC_CA_SERVER_CA_KEYFILE=/etc/hyperledger/fabric-ca-server-config/b22dd4d00a7bab82e84a904a33377fc82ba3695d32685f0ea64749b546361df9_sk
+      - FABRIC_CA_SERVER_CA_KEYFILE=/etc/hyperledger/fabric-ca-server-config/3361e8b40d7226a425978bbbd403f310b3710dec3e5ca785d5aabc227196c933_sk
       - FABRIC_CA_SERVER_TLS_ENABLED=true
       - FABRIC_CA_SERVER_TLS_CERTFILE=/etc/hyperledger/fabric-ca-server-config/ca.org1.kevin.kongyixueyuan.com-cert.pem
-      - FABRIC_CA_SERVER_TLS_KEYFILE=/etc/hyperledger/fabric-ca-server-config/b22dd4d00a7bab82e84a904a33377fc82ba3695d32685f0ea64749b546361df9_sk
+      - FABRIC_CA_SERVER_TLS_KEYFILE=/etc/hyperledger/fabric-ca-server-config/3361e8b40d7226a425978bbbd403f310b3710dec3e5ca785d5aabc227196c933_sk
     ports:
       - "7054:7054"
     command: sh -c 'fabric-ca-server start -b admin:adminpw -d'
@@ -288,10 +288,10 @@ services:
       - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
       - FABRIC_CA_SERVER_CA_NAME=ca-org2
       - FABRIC_CA_SERVER_CA_CERTFILE=/etc/hyperledger/fabric-ca-server-config/ca.org2.kevin.kongyixueyuan.com-cert.pem
-      - FABRIC_CA_SERVER_CA_KEYFILE=/etc/hyperledger/fabric-ca-server-config/c4e1c8a8f5eb0c01df14cf2b635c656e0f7884c178dbc71d45c19f8ae3018340_sk
+      - FABRIC_CA_SERVER_CA_KEYFILE=/etc/hyperledger/fabric-ca-server-config/7d800a7f792c874f013573376875389dc4f3f4d47534b749c2b6a44269b49f5b_sk
       - FABRIC_CA_SERVER_TLS_ENABLED=true
       - FABRIC_CA_SERVER_TLS_CERTFILE=/etc/hyperledger/fabric-ca-server-config/ca.org2.kevin.kongyixueyuan.com-cert.pem
-      - FABRIC_CA_SERVER_TLS_KEYFILE=/etc/hyperledger/fabric-ca-server-config/c4e1c8a8f5eb0c01df14cf2b635c656e0f7884c178dbc71d45c19f8ae3018340_sk
+      - FABRIC_CA_SERVER_TLS_KEYFILE=/etc/hyperledger/fabric-ca-server-config/7d800a7f792c874f013573376875389dc4f3f4d47534b749c2b6a44269b49f5b_sk
     ports:
       - "8054:7054"
     command: sh -c 'fabric-ca-server start -b admin:adminpw -d'
@@ -898,7 +898,7 @@ organizations:
     # this way. The SDK should allow applications to set the org admin identity via APIs, and only use
     # this route as an alternative when it exists.
     adminPrivateKey:
-      path: artifacts/channel/crypto-config/peerOrganizations/org1.kevin.kongyixueyuan.com/users/Admin@org1.kevin.kongyixueyuan.com/msp/keystore/3a497246b8b16356e0a4e2df8d77e3327c5934494f488ddaa625d6bdbdff2cf7_sk
+      path: artifacts/channel/crypto-config/peerOrganizations/org1.kevin.kongyixueyuan.com/users/Admin@org1.kevin.kongyixueyuan.com/msp/keystore/ca72ee77552f81537f82c98f4d2abc6d6df1c94c8022f1a176c45e35a812496d_sk
     signedCert:
       path: artifacts/channel/crypto-config/peerOrganizations/org1.kevin.kongyixueyuan.com/users/Admin@org1.kevin.kongyixueyuan.com/msp/signcerts/Admin@org1.kevin.kongyixueyuan.com-cert.pem
 
@@ -915,7 +915,7 @@ organizations:
     certificateAuthorities:
       - ca-org2
     adminPrivateKey:
-      path: artifacts/channel/crypto-config/peerOrganizations/org2.kevin.kongyixueyuan.com/users/Admin@org2.kevin.kongyixueyuan.com/msp/keystore/76d11fc03c74296a12d1e0075b1ea17332ee2a07f97617cb6104e1f5aa377953_sk
+      path: artifacts/channel/crypto-config/peerOrganizations/org2.kevin.kongyixueyuan.com/users/Admin@org2.kevin.kongyixueyuan.com/msp/keystore/77c2e4e04f4098e29b6143f18a378a20fce8af5151b7e93aafba327fc2256c30_sk
     signedCert:
       path: artifacts/channel/crypto-config/peerOrganizations/org2.kevin.kongyixueyuan.com/users/Admin@org2.kevin.kongyixueyuan.com/msp/signcerts/Admin@org2.kevin.kongyixueyuan.com-cert.pem
 
@@ -1153,7 +1153,7 @@ organizations:
     # this way. The SDK should allow applications to set the org admin identity via APIs, and only use
     # this route as an alternative when it exists.
     adminPrivateKey:
-      path: artifacts/channel/crypto-config/peerOrganizations/org1.kevin.kongyixueyuan.com/users/Admin@org1.kevin.kongyixueyuan.com/msp/keystore/3a497246b8b16356e0a4e2df8d77e3327c5934494f488ddaa625d6bdbdff2cf7_sk
+      path: artifacts/channel/crypto-config/peerOrganizations/org1.kevin.kongyixueyuan.com/users/Admin@org1.kevin.kongyixueyuan.com/msp/keystore/ca72ee77552f81537f82c98f4d2abc6d6df1c94c8022f1a176c45e35a812496d_sk
     signedCert:
       path: artifacts/channel/crypto-config/peerOrganizations/org1.kevin.kongyixueyuan.com/users/Admin@org1.kevin.kongyixueyuan.com/msp/signcerts/Admin@org1.kevin.kongyixueyuan.com-cert.pem
 
@@ -1170,7 +1170,7 @@ organizations:
     certificateAuthorities:
       - ca-org2
     adminPrivateKey:
-      path: artifacts/channel/crypto-config/peerOrganizations/org2.kevin.kongyixueyuan.com/users/Admin@org2.kevin.kongyixueyuan.com/msp/keystore/76d11fc03c74296a12d1e0075b1ea17332ee2a07f97617cb6104e1f5aa377953_sk
+      path: artifacts/channel/crypto-config/peerOrganizations/org2.kevin.kongyixueyuan.com/users/Admin@org2.kevin.kongyixueyuan.com/msp/keystore/77c2e4e04f4098e29b6143f18a378a20fce8af5151b7e93aafba327fc2256c30_sk
     signedCert:
       path: artifacts/channel/crypto-config/peerOrganizations/org2.kevin.kongyixueyuan.com/users/Admin@org2.kevin.kongyixueyuan.com/msp/signcerts/Admin@org2.kevin.kongyixueyuan.com-cert.pem
 
